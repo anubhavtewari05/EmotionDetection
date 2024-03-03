@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Online Emotion Detector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <style>
+  div#Nav{
+  position: fixed;
+  display: :inline-block;
+  width:auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111;
+  z-index: 1;
+  }
+  a:hover {
+background-color: #FA4721;
+padding: 30px 30px;
+text-decoration: none;
+}
+  a:active{
+    background-color: yellow;
+  }
+  h1{
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  }
+  h2{
+  display: inline-block;
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+  }
+  ul,li{
+    padding-left: 100px;
+    padding-right: 50px;
+    display: inline-block;
+    align: right;
+    color: white;
+  }
+  body{
+    background-color: #FA4721;
+  }
+    p {
+      width: 90%;
+    }
+    div.section_content{
+
+
+      margin: 100px;
+      padding:100px;
+      top:30%;
+      background-color: #ffffff;
+      border: 1px solid black;
+      opacity: 0.8;
+
+    }
+    div.preview{
+
+      padding-top: 100px;
+      margin: 100px;
+
+    }
+  </style>
+
+  <body>
+
+    <div id="Nav">
+        <h1>Emotion Detection</h1>
+        <ul>
+          <a href="/"><li>Home</li></a>
+        <a href="/OurProject"><li>Our Project</li><a>
+        <a href="/Aboutus"><li>About us </li></a>
+        
+        </ul>
+    </div>
+
+    <h1> Emotion Detector </h1>
+
+    <div class="section_content" style="font-size: 1em; padding: 0;">
+      <p>
+        Hi there! This is an emotion detector.
+        Given an image, it will localize the objects and tell which class the model thinks they belong to.
+        There are only 5 classes</a>
+        that the model knows. Make sure to adjust your expectations :)
+      </p>
+
+      <p style="padding: 0;">
+        Under the hood, the webpage (front-end) will send your image to the back-end.
+        Then, the model makes detections and sends results for you to see here.
+
+      </p>
+
+
+      <hr style="margin: 1em;">
+
+      <!-- buttons -->
+      <div style="margin: 1em;">
+        <!-- input file -->
+
+        <p>Click on button below for realtime emotion detection:</p>
+        <form action="/capture" >
+          <button name="captureBtn" type="submit"><p> Open Camera</button>
+        </form>
+        <p>Press 'q' to close the window </p>
+      </div>
+    </div>
+
+
+
+    <footer class="version">
+      <br><br><br><br><div id="four">
+          <center><p>©2022,Emotion Detection by Presidency University</p></center>
+        </div>
+    </footer>
+
+
+  </body>
+</html>
